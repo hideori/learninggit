@@ -1,0 +1,46 @@
+Git笔记
+
+1. 输入git可以检查系统上是否已经安装了Git。
+
+2. git config --global user.name “Your Name”
+    git config --global user.email “email@example.com”
+    设置全局的作者姓名和email地址。
+
+3. 在工作目录下输入git init命令就可以在此目录下创建Git配置库。
+
+4. git add LearningGit.docx将文件添加到版本库。
+    git commit将添加到版本库中的文件提交到版本库中。
+    git commit -m "comment"为这次提交附上注释。
+
+5. git status命令查看配置库当前状态。
+
+6. git diff LearningGit.docx查看文件有哪些变更。
+
+7. 提交修改过的文件也使用git add和git commit两条命令。
+
+8. git log命令可以查看提交历史。
+    git log --pretty=oneline可以查看提交历史的摘要。
+
+9. 在Git中，HEAD表示当前版本。HEAD^表示上一个版本。HEAD^^表示上上个版本。HEAD~N表示上N个版本。
+
+10. 使用命令git reset --hard HEAD^将文件回退到上一个版本。
+
+11. 使用命令git reset --hard commit_id将文件恢复到指定的版本。
+
+12. git reflog命令可以查看命令历史。以查找某个版本号。
+
+13. 在Git中，我们操作文件的目录称作工作区。工作区中有一个隐藏目录.git。这是Git的版本库。
+
+14. Git版本库中保存了很多东西。其中最重要的就是称作stage或index的暂存区。除此之外，版本库中还有Git自动创建的称作master的第一个分支，以及指向master分支的指针HEAD。前面我们用git add命令添加文件实际上是把文件添加到暂存区；git commit命令把暂存区的内容提交到当前分支。
+
+15. 每次修改，如果不add到暂存区，commit的时候就不会提交到版本库分支。
+
+16. git diff HEAD -- LearningGit.docx命令可以查看工作区和版本库里最新版本的区别。
+
+17. git checkout -- LearningGit.docx命令撤销文件在工作区的修改，将文件恢复到版本库或缓冲区的状态。注意--操作符，如果没有它，表示切换到另一个分支。
+
+18. git reset HEAD LearningGit.docx命令将暂存区的修改撤销（unstage）掉，并回退到指定版本，重新放回工作区。HEAD表示最新版本。reset后，暂存区是干净的，所有修改都在工作区。
+
+19. 
+
+
