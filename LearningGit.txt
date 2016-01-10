@@ -41,6 +41,8 @@ Git笔记
 
 18. git reset HEAD LearningGit.docx命令将暂存区的修改撤销（unstage）掉，并回退到指定版本，重新放回工作区。HEAD表示最新版本。reset后，暂存区是干净的，所有修改都在工作区。
 
-19. 
+19. git rm LearningGit.docx命令将文件删除并在缓冲区记录，待commit提交时从版本库删除。
+
+20. 
 
 
