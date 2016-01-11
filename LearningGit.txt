@@ -2,8 +2,8 @@ Git笔记
 
 1. 输入git可以检查系统上是否已经安装了Git。
 
-2. git config --global user.name “Your Name”
-    git config --global user.email “email@example.com”
+2. git config --global user.name "Your Name"
+    git config --global user.email "email@example.com"
     设置全局的作者姓名和email地址。
 
 3. 在工作目录下输入git init命令就可以在此目录下创建Git配置库。
@@ -43,6 +43,14 @@ Git笔记
 
 19. git rm LearningGit.docx命令将文件删除并在缓冲区记录，待commit提交时从版本库删除。
 
-20. 
+20. 在GitHub上托管自己的Git仓库前检查用户主目录下是否有.ssh目录和目录下的id_rsa和id_rsa.pub两个文件。如果没有，使用ssh-keygen -t rss -C "email@example.com"命令生成公匙和私匙。登陆GitHub，在Account settings->SSH Keys里贴上id_rsa.pub文件的内容。接下来在GitHub上创建一个空的新仓库。
+
+21. 在本地仓库下执行命令git remote add origin git@github.com:hideori/learninggit.git将本地仓库和远程仓库关联起来。添加后，远程仓库的名字就是origin。
+
+22. 接下来，命令git push -u origin master将本地仓库当前分支master的内容推送到远程。第一次推送master分支时，加上-u参数，Git不但会把本地的master分支内容推送到远程的master分支，还会把本地的master分支和远程的master分支关联起来。在以后推送或拉取时就可以简化命令，直接使用git push origin master把本地master分支的最新修改推送至GitHub。
+
+23. 第一次使用Git的clone或push连接GitHub时会有授权告警，只需输入yes即可。
+
+24.
 
 
