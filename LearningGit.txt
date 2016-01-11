@@ -51,6 +51,8 @@ Git笔记
 
 23. 第一次使用Git的clone或push连接GitHub时会有授权告警，只需输入yes即可。
 
-24.
+24. 命令git clone git@github.com:hideori/learninggit.git将远程库克隆到本地。
+
+25. 除了git协议，还可以使用https协议（https://github.com/hideori/learninggit.git）连接远程库。
 
 
