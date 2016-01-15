@@ -55,4 +55,11 @@ Git笔记
 
 25. 除了git协议，还可以使用https协议（https://github.com/hideori/learninggit.git）连接远程库。
 
+26. git checkout -b branch_20160115命令创建并切换到分支branch_20160115。
+    相当于两条命令：
+    git branch branch_20160115
+    git checkout branch_20160115
+
+27. git branch命令查看所有分支。当前分支前面会有一个*号。
+
 
