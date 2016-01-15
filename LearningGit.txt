@@ -62,4 +62,8 @@ Git笔记
 
 27. git branch命令查看所有分支。当前分支前面会有一个*号。
 
+28. git merge branch_20160115命令将branch_20160115分支的工作成果合并到master分支上。结果信息里的Fast-forward表示快速合并模式，即直接把master指向branch_20160115分支的当前提交，所以速度快。并不是每次合并都能够Fast-forward，其它方式后面介绍。
+
+29. git branch -d branch_20160115命令删除branch_20160115分支。
+
 
