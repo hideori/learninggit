@@ -66,4 +66,5 @@ Git笔记
 
 29. git branch -d branch_20160115命令删除branch_20160115分支。
 
+30. 当在分支和主线上都做了修改后，git merge branch_20160116会报冲突，无法自动合并。
 
