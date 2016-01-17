@@ -70,4 +70,18 @@ Git笔记
 
 31. git log --graph --pretty=oneline --abbrev-commit可以查看分支情况。
 
-32. 
+32. 为了更清楚地查看分支情况，通常会强制禁止Fast forward模式的merge。
+    git merge --no-ff -m "merge with branch_20160117" branch_20160117
+
+33. 常用分支策略：保持master分支稳定，仅用来发布新版本，不用与平时修改代码。新建develop分支完成工作，在版本发布时合并到master分支上。每个人都从develop分支创建自己的分支用于平时编码，随时合并到develop分支上。
+
+34. git stash命令用来保存工作现场。
+    当你需要切换到一个分支上修改代码，当前分支的代码有不能提交的时候，可以先将当前的工作现场保存起来。切换到其它分支完成工作后，再切换回来，回复现场继续工作。
+
+35. git stash apply命令恢复保存的现场，但保留保存的内容，git stash drop命令删除保存的现场。
+
+36. git stash pop命令恢复现场的同时将保存的内容也删除。
+
+37. git stash list命令查看保存现场的记录。
+
+38. 可以多次地stash保存现场，然后执行命令git stash apply stash@{0}恢复指定的现场。
