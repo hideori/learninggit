@@ -67,3 +67,7 @@ Git笔记
 29. git branch -d branch_20160115命令删除branch_20160115分支。
 
 30. 当在分支和主线上都做了修改后，git merge branch_20160116会报冲突，无法自动合并。这时候必须手工解决冲突，提交才能完成合并。
+
+31. git log --graph --pretty=oneline --abbrev-commit可以查看分支情况。
+
+32. 
