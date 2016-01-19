@@ -65,6 +65,7 @@ Git笔记
 28. git merge branch_20160115命令将branch_20160115分支的工作成果合并到master分支上。结果信息里的Fast-forward表示快速合并模式，即直接把master指向branch_20160115分支的当前提交，所以速度快。并不是每次合并都能够Fast-forward，其它方式后面介绍。
 
 29. git branch -d branch_20160115命令删除branch_20160115分支。
+    git branch -D branch_20160115命令强行删除branch_20160115分支。用来丢弃一个没有被合并过的分支。
 
 30. 当在分支和主线上都做了修改后，git merge branch_20160116会报冲突，无法自动合并。这时候必须手工解决冲突，提交才能完成合并。
 
@@ -85,3 +86,19 @@ Git笔记
 37. git stash list命令查看保存现场的记录。
 
 38. 可以多次地stash保存现场，然后执行命令git stash apply stash@{0}恢复指定的现场。
+
+39. 从远程仓库克隆时，Git自动把本地的master分支和远程的master分支对应起来。远程仓库的默认名称是origin。
+    git remote命令可以查看远程仓库信息。
+    git remote -v命令可以查看更详细的远程仓库信息，包括可以fetch和push的origin地址。
+
+40. git push origin branch_20160119命令将branch_20160119分支推送到远程仓库。
+
+41. git checkout -b branch_20160119 origin/branch_20160119命令将远程branch_20160119创建到本地并切换到该分支。
+
+42. git branch --set-upstream branch_20160119 origin/branch_20160119命令将本地分支和远程分支建立关联（建立tracking information）。
+
+43. 如果push失败，需要先将远程分支pull到本地。执行git pull命令。如果文件有冲突，需要手工解决冲突。
+
+44. 标签是版本库的快照，可以标记一个历史版本。切换到想要打标签的分支使用命令git tag tag_20160119即可。
+
+45. 
