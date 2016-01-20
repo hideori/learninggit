@@ -101,4 +101,17 @@ Git笔记
 
 44. 标签是版本库的快照，可以标记一个历史版本。切换到想要打标签的分支使用命令git tag tag_20160119即可。
 
-45. 
+45. git tag tag_name commit_id命令可以在指定的提交上打标签。
+
+46. git show tag_name命令可以查看标签信息。
+
+47. git tag命令可以查看标签列表。
+
+48. git tag -a tag_name -m "commit..." commit_id命令可以打带说明的标签。－a指定标签名，－m指定说明内容。
+
+49. git tag -d tag_name命令可以删除一个标签。
+
+50. git push origin tag_name命令将标签推送到远程仓库。
+    git push origin --tags命令将所有标签推送到远程仓库。
+    git push origin :refs/tags/tag_name命令删除远程仓库的标签。
+
